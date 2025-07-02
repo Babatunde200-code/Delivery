@@ -66,6 +66,7 @@ POST	/api/auth/signup/	Register a new user
 POST	/api/auth/login/	Login and receive JWT
 POST	/api/auth/logout/	Logout and invalidate token
 GET	/api/auth/verify/	Email verification
+
 📦 Delivery & Travel APIs
 Method	Endpoint	Description
 POST	/api/travels/	Create a new travel plan
