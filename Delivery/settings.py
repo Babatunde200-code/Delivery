@@ -39,10 +39,12 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     'rest_framework',
     "user_side.apps.UserSideConfig",
+    'rest_framework_simplejwt.token_blacklist',
     'rest_framework_simplejwt',
     'login_user',
     "user_profile",
     "user_logout",
+    "travels",
 ]
 
 MIDDLEWARE = [
@@ -64,6 +66,9 @@ REST_FRAMEWORK = {
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     )
 }
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+DEFAULT_FROM_EMAIL = 'noreply@example.com'
 
 
 TEMPLATES = [
